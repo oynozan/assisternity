@@ -11,6 +11,7 @@ interface IStream {
     message?: string;
     content?: string;
     status: boolean;
+    title?: string;
     identity?: "CHAT" | "TRANSACTION" | "CONTRACT";
 }
 
@@ -49,7 +50,7 @@ export default function ChatMessages({ id }: { id?: string }) {
                     ...m,
                     {
                         timestamp: Date.now(),
-                        content: data.message!,
+                        content: data.content!,
                         isAnswer: true,
                         identity: data.identity!,
                     },

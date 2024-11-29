@@ -73,7 +73,13 @@ function listen(io: any) {
                 });
 
                 // Send response
-                socket.emit("chat-sendMessage", { id, response, title, status: true });
+                socket.emit("chat-sendMessage", {
+                    id,
+                    content: response.response,
+                    identity: response.identity,
+                    title,
+                    status: true,
+                });
             } catch (error) {
                 console.error(error);
                 socket.emit("chat-sendMessage", { status: false, message: "Failed to send message" });
