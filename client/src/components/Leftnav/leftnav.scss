@@ -1,0 +1,40 @@
+.left-nav {
+    position: relative;
+    z-index: 2;
+    background: var(--gray);
+    box-shadow: 0px 3px 10px rgba(74, 74, 74, 0.286);
+    overflow-y: auto;
+
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 25px;
+        padding: 15px;
+        color: var(--lgray50);
+        transition: 150ms;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--lgray);
+        }
+    }
+
+    .warning {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 100px);
+
+        p {
+            color: var(--lgray50);
+            font-family: "Monsterrat", sans-serif;
+            text-align: center;
+
+            span {
+                color: var(--main);
+                font-weight: 500;
+            }
+        }
+    }
+}

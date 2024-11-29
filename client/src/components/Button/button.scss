@@ -1,0 +1,28 @@
+.custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: transparent;
+    transition: 150ms;
+    cursor: pointer;
+
+    &.primary {
+        background: var(--second);
+        color: var(--light);
+
+        &:hover {
+            background: var(--second-dark);
+        }
+    }
+
+    &:disabled {
+        cursor: default;
+    }
+}

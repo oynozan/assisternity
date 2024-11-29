@@ -1,0 +1,17 @@
+@mixin W($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin H($breakpoint) {
+    @media only screen and (max-height: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin W_H($w, $h) {
+    @media only screen and (max-width: $w) and (max-height: $h) {
+        @content;
+    }
+}

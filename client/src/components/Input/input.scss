@@ -1,0 +1,16 @@
+.input-wrapper {
+    input.input {
+        width: 100%;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-weight: 400;
+        background: transparent;
+
+        &::placeholder {
+            color: #acacac;
+        }
+    }
+}

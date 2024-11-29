@@ -1,0 +1,42 @@
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px 20px 20px;
+    height: fit-content;
+    width: 100%;
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+
+        > p {
+            max-width: 75%;
+            padding: 15px 20px;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: "Poppins";
+        }
+
+        &.answer {
+            align-items: flex-start;
+
+            p {
+                background: var(--gray);
+                border-radius: 0px 8px 8px 8px;
+            }
+        }
+
+        &.question {
+            align-items: flex-end;
+
+            p {
+                background: var(--second);
+                border-radius: 8px 0 8px 8px;
+            }
+        }
+    }
+}
