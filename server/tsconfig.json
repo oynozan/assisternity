@@ -5,7 +5,9 @@
         "outDir": "./dist",
         "rootDir": "./",
         "strict": true,
+        "skipLibCheck": true, // Otherwise aepp-sdk typings will throw errors while compiling
         "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types", "node_modules/@aeternity/aepp-sdk/src/typings"],
         "allowSyntheticDefaultImports": true
     },
     "include": ["**/*"],
